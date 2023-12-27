@@ -1,15 +1,15 @@
+  
+name: Static security analysis for Terraform
 
-name: Static security analysis for Terraform code
+permissions: read-all
 
 on:
   push:
     branches:
-    - master
-    - 1.x
+    - main
   pull_request:
     branches:
-    - master
-    - 1.x
+    - main
 jobs:
   checkov-job:
     runs-on: ubuntu-latest
